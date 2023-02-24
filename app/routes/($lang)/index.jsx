@@ -54,13 +54,13 @@ export async function loader({params, context}) {
         language,
       },
     }),
-    // tertiaryHero: context.storefront.query(COLLECTION_HERO_QUERY, {
-    //   variables: {
-    //     handle: 'womens-thongs',
-    //     country,
-    //     language,
-    //   },
-    // }),
+    tertiaryHero: context.storefront.query(COLLECTION_HERO_QUERY, {
+      variables: {
+        handle: 'women',
+        country,
+        language,
+      },
+    }),
     analytics: {
       pageType: AnalyticsPageType.home,
     },
